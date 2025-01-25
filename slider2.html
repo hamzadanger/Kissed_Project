@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+
+        .take__content .swiper {
+            width: 75%;
+            height: 100%;
+        }
+
+        .take__content .swiper-slide {
+            /* text-align: center; */
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .take__box {
+            padding: 30px 20px 30px 18px;
+            border-radius: 10px;
+            border: 1px solid #C0C5C5;
+            background: #FFF;
+            width: 81%;
+        }
+
+        .don__wrap {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            grid-column-gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .profile__img {
+            width: 85.091px;
+        }
+
+        .don__wrap h4 {
+            color: #000;
+            text-align: center;
+            font-family: 'Gilroy';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+
+        .don__wrap p {
+            color: #2B3939;
+            text-align: center;
+            font-family: 'G|ilroy';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 33px;
+            /* 183.333% */
+            letter-spacing: 0.54px;
+            text-transform: capitalize;
+        }
+
+        .white {
+            width: 50px;
+            height: 50px;
+            background-color: #FFF;
+            filter: drop-shadow(0px 7px 10px rgba(0, 0, 0, 0.20));
+            border-radius: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            left: 10px;
+        }
+
+        .rty {
+            width: 50px;
+            height: 50px;
+            background-color: #FFF;
+            filter: drop-shadow(0px 7px 10px rgba(0, 0, 0, 0.20));
+            border-radius: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            right: 10px;
+        }
+
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            display: none;
+            font-family: swiper-icons;
+            font-size: var(--swiper-navigation-size);
+            text-transform: none !important;
+            letter-spacing: 0;
+            font-variant: initial;
+            line-height: 1;
+        }
+
+        @media (max-width: 760px) {
+            .swiper-button-next {
+                right: 20px;
+                transform: rotate(90deg);
+            }
+
+            .swiper-button-prev {
+                left: 20px;
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <section class="take--sec">
+        <div class="container">
+        <div class="take__content">
+            <div class="swiper ryt">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="take__box">
+                            <div class="don__wrap">
+                                <div class="profile__img"><img src="images/profile-2.svg"></div>
+                                <h4>Tracy V.</h4>
+                                <p>CA</p>
+                            </div>
+                            <div class="star__img"><img src="images/Group 19.svg"></div>
+                            <p class="take__para2">I'm giving 5 stars becuae they they went out of they way to make it
+                                early,
+                                plus the aragment was better than could be expected. Thank You</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="take__box">
+                            <div class="don__wrap">
+                                <div class="profile__img"><img src="images/profile-2.svg"></div>
+                                <h4>Tracy V.</h4>
+                                <p>CA</p>
+                            </div>
+                            <div class="star__img"><img src="images/Group 19.svg"></div>
+                            <p class="take__para2">I'm giving 5 stars becuae they they went out of they way to make it
+                                early,
+                                plus the aragment was better than could be expected. Thank You</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="take__box">
+                            <div class="don__wrap">
+                                <div class="profile__img"><img src="images/profile-2.svg"></div>
+                                <h4>Tracy V.</h4>
+                                <p>CA</p>
+                            </div>
+                            <div class="star__img"><img src="images/Group 19.svg"></div>
+                            <p class="take__para2">I'm giving 5 stars becuae they they went out of they way to make it
+                                early,
+                                plus the aragment was better than could be expected. Thank You</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="take__box">
+                            <div class="don__wrap">
+                                <div class="profile__img"><img src="images/profile-2.svg"></div>
+                                <h4>Tracy V.</h4>
+                                <p>CA</p>
+                            </div>
+                            <div class="star__img"><img src="images/Group 19.svg"></div>
+                            <p class="take__para2">I'm giving 5 stars becuae they they went out of they way to make it
+                                early,
+                                plus the aragment was better than could be expected. Thank You</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="take__box">
+                            <div class="don__wrap">
+                                <div class="profile__img"><img src="images/profile-2.svg"></div>
+                                <h4>Tracy V.</h4>
+                                <p>CA</p>
+                            </div>
+                            <div class="star__img"><img src="images/Group 19.svg"></div>
+                            <p class="take__para2">I'm giving 5 stars becuae they they went out of they way to make it
+                                early,
+                                plus the aragment was better than could be expected. Thank You</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="take__box">
+                            <div class="don__wrap">
+                                <div class="profile__img"><img src="images/profile-2.svg"></div>
+                                <h4>Tracy V.</h4>
+                                <p>CA</p>
+                            </div>
+                            <div class="star__img"><img src="images/Group 19.svg"></div>
+                            <p class="take__para2">I'm giving 5 stars becuae they they went out of they way to make it
+                                early,
+                                plus the aragment was better than could be expected. Thank You</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="take__box">
+                            <div class="don__wrap">
+                                <div class="profile__img"><img src="images/profile-2.svg"></div>
+                                <h4>Tracy V.</h4>
+                                <p>CA</p>
+                            </div>
+                            <div class="star__img"><img src="images/Group 19.svg"></div>
+                            <p class="take__para2">I'm giving 5 stars becuae they they went out of they way to make it
+                                early,
+                                plus the aragment was better than could be expected. Thank You</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="take__box">
+                            <div class="don__wrap">
+                                <div class="profile__img"><img src="images/profile-2.svg"></div>
+                                <h4>Tracy V.</h4>
+                                <p>CA</p>
+                            </div>
+                            <div class="star__img"><img src="images/Group 19.svg"></div>
+                            <p class="take__para2">I'm giving 5 stars becuae they they went out of they way to make it
+                                early,
+                                plus the aragment was better than could be expected. Thank You</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="take__box">
+                            <div class="don__wrap">
+                                <div class="profile__img"><img src="images/profile-2.svg"></div>
+                                <h4>Tracy V.</h4>
+                                <p>CA</p>
+                            </div>
+                            <div class="star__img"><img src="images/Group 19.svg"></div>
+                            <p class="take__para2">I'm giving 5 stars becuae they they went out of they way to make it
+                                early,
+                                plus the aragment was better than could be expected. Thank You</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next rty">
+                    <img src="images/right-arrow.svg">
+                </div>
+                <div class="swiper-button-prev white">
+                    <img src="images/left-arrow.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.ryt', {
+            slidesPerView: 3,
+            direction: getDirection(),
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                resize: function () {
+                    swiper.changeDirection(getDirection());
+                },
+            },
+        });
+
+        function getDirection() {
+            var windowWidth = window.innerWidth;
+            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+            return direction;
+        }
+    </script>
+</body>
+
+</html>

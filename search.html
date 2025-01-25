@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #dfedee;
+        }
+
+        .wrap {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 0px;
+            height: 55px;
+            background: #7c23b2;
+            line-height: 55px;
+            padding-right: 55px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: all 0.5s ease;
+        }
+
+        .input {
+            border: 0;
+            background: transparent;
+            width: 0%;
+            outline: none;
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #fff;
+            font-style: italic;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .wrap .fa {
+            color: #fff;
+            position: absolute;
+            right: 17px;
+            top: 15px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        .wrap.active {
+            width: 250px;
+            padding-left: 25px;
+            transition: all 0.5s ease;
+        }
+
+        .input.active {
+            width: 98%;
+            padding-left: 5px;
+            transition: all 0.5s 0.8s ease;
+        }
+
+        input::placeholder {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <form>
+            <input type="text" class="input" placeholder="Поиск">
+        </form>
+        <i class="fa fa-search" aria-hidden="true">
+        </i>
+    </div>
+    <script>
+        $(document).ready(function () {
+
+            $(".fa-search").click(function () {
+                $(".wrap, .input").toggleClass("active");
+                $("input[type='text']").focus();
+            });
+
+        });
+    </script>
+</body>
+
+</html>
